@@ -6,10 +6,9 @@ if (localStorage.getItem("AddedBooks") === null) {
 // store data into local storage
 const storeData = JSON.parse(localStorage.getItem("AddedBooks"));
 
-// Uncomment the following 3 lines and eliminate this commment
-// function updateData() {
-//     localStorage.setItem("AddedBooks", JSON.stringify(storeData));
-// }
+function updateData() {
+    localStorage.setItem("AddedBooks", JSON.stringify(storeData));
+}
 
 // Getting values from input fields
 const form = document.querySelector("form");
