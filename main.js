@@ -61,7 +61,4 @@ function removeBook(i) {
     displayBooks();
 }
 
-// Remove the below line and this comment
-removeBook();
-
 window.onload = displayBooks();
