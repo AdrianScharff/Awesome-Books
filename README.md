@@ -44,7 +44,13 @@ Awesome books: plain JavaScript with objects .
 <details>
   <summary>CSS</summary>
   <ul>
-    <li><a href="NA">For styling  My portifolio</a></li>
+    <li><a href="NA">For styling the website</a></li>
+  </ul>
+</details>
+<details>
+  <summary>JavaScript</summary>
+  <ul>
+    <li><a href="NA">For adding all the functionalities</a></li>
   </ul>
 </details>
 
@@ -52,7 +58,7 @@ Awesome books: plain JavaScript with objects .
 
 - linter setup
 - HTML, JS and CSS file creation
-- creating the work and about me sections of my mobile version portiflio
+- Addition and elimination of books
 <p align="right">
 (<a href="#readme-top">back to top</a>)</p>
 
@@ -74,7 +80,7 @@ Awesome books: plain JavaScript with objects .
   
 ### Setup
 
-Run the command to clone the project locally on your computer "git clone https://github.com/solog0039/Portfolio-setup-and-mobile-first2.git"
+Run the command to clone the project locally on your computer "git clone https://github.com/AdrianScharff/Awesome-Books.git"
 
 ### Install
 
@@ -93,6 +99,12 @@ To run this project:
 
 ## 👥 Authors <a name="authors"></a>
 
+👤 Adrian Juarez
+
+- GitHub: [AdrianScharff](https://github.com/AdrianScharff)
+- Twitter: [Adrian](https://twitter.com/home)
+- LinkedIn: [Adrian Juarez](linkedin.com/in/adrián-juárez-17a51b263) <br> <br>
+
 👤 Solomon G. Kidanu
 - GitHub: [Solomon](https://github.com/solog0039)
 - Twitter: [Solomon](https://twitter.com/Solomon57320119)
@@ -102,10 +114,8 @@ To run this project:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- HTML file
-- JS file
-- CSS file
-- Toolbar and headline 
+- Better styling with CSS
+- Refactoring of JS file
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,8 +141,8 @@ Contributions, issues, and feature requests are welcome!
 
 - Can I publish this project as mine?
 
-  - No, but you can use it as an inspiration or for educational purposes.
-
+  - No, but you can use it as an inspiration or for educational purposes. 
+  <br></br>
 - Can I modify it while practicing?
 
   - Yes, you can do it, but make sure that you know what are you doing, we never know when we can get stuck at some point just because we were playing with the code _-laughs-_
