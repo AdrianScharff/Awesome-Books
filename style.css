@@ -1,3 +1,88 @@
 body {
   font-family: 'Courier New', Courier, monospace;
 }
+
+h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ------------------------------- */
+
+.booksContainer {
+  border: 2px solid black;
+  margin-bottom: 2rem;
+}
+
+.booksContainer ul {
+  width: 100%;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eachBook {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+}
+
+.eachBook p {
+  max-width: 71%;
+  word-wrap: break-word;
+  font-weight: 900;
+}
+
+.grayBackground {
+  background-color: rgba(128, 128, 128, 0.493);
+}
+
+button {
+  border: 0.3rem solid black;
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+/* ---------------------- */
+
+hr {
+  width: 10%;
+  height: 0.17rem;
+  background-color: black;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 19rem;
+  height: 2rem;
+  border: 0.2rem solid black;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: black;
+}
+
+.addContainer {
+  width: 19rem;
+  display: flex;
+  justify-content: flex-end;
+}
