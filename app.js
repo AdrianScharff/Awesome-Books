@@ -19,10 +19,14 @@ class BookManager {
   createBooks() {
     let books = "";
     for (let i = 0; i < this.storeData.length; i += 1) {
+      const isPairIndex = i % 2 === 0;
+      const greyClass = isPairIndex ? 'grayBackground' : '';
+
       books += `
-        <p> ${this.storeData[i].title} </p>
-        <p> ${this.storeData[i].author} </p>
-        <button onclick="bookManager.removeBook(${i})">Remove</button>
+        <div class="eachBook ${greyClass}">
+        <p> ${this.storeData[i].title} by ${this.storeData[i].author} </p>
+        <button class="remove" onclick="bookManager.removeBook(${i})">Remove</button>
+        </div>
         </hr>
       `;
     }
