@@ -1,23 +1,23 @@
 class BookManager {
   constructor() {
-    if (localStorage.getItem("AddedBooks") === null) {
-      localStorage.setItem("AddedBooks", JSON.stringify([]));
+    if (localStorage.getItem('AddedBooks') === null) {
+      localStorage.setItem('AddedBooks', JSON.stringify([]));
     }
 
-    this.storeData = JSON.parse(localStorage.getItem("AddedBooks"));
+    this.storeData = JSON.parse(localStorage.getItem('AddedBooks'));
     this.form = document.querySelector('form');
-    this.titleInput = document.querySelector(".title");
-    this.authorInput = document.querySelector(".author");
+    this.titleInput = document.querySelector('.title');
+    this.authorInput = document.querySelector('.author');
 
     this.form.addEventListener('submit', this.handleFormSubmit.bind(this));
   }
 
-  updateData () {
-    localStorage.setItem("AddedBooks", JSON.stringify(this.storeData));
+  updateData() {
+    localStorage.setItem('AddedBooks', JSON.stringify(this.storeData));
   }
 
   createBooks() {
-    let books = "";
+    let books = '';
     for (let i = 0; i < this.storeData.length; i += 1) {
       const isPairIndex = i % 2 === 0;
       const greyClass = isPairIndex ? 'grayBackground' : '';
@@ -50,8 +50,8 @@ class BookManager {
 
   addNewData(bookTitle, bookAuthor) {
     const book = {
-        title: bookTitle,
-        author: bookAuthor,
+      title: bookTitle,
+      author: bookAuthor,
     };
     this.storeData.push(book);
     this.updateData();
