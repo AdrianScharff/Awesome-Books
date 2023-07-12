@@ -46,7 +46,8 @@ h1 {
 
 button {
   border: 0.3rem solid black;
-  background-color: white;
+  /* uncomment this line below */
+  /* background-color: white; */
   font-size: 1rem;
   font-weight: 900;
 }
