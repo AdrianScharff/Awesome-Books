@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Awesome Books</title>
 </head>
+
 <body>
+    <header>
+        <nav>
+            <ul id="bookList">
+                <li><a class="nav-link" data-section="list" href="#">List</a></li>
+                <li><a class="nav-link" data-section="add" href="#">Add new book</a></li>
+                <li><a class="nav-link" data-section="contact" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <h1>All awesome Books</h1>
-        <div class="booksContainer">
+        <section id="list-section" class="section">
+            <h1>All awesome Books</h1>
+            <div class="booksContainer">
 
 
+            </div>
+            <hr>
+        </section>
+
+        <section id="add-section" class="section">
+            <h1>Add a new book</h1>
+            <form id="form">
+                <input type="text" placeholder="Title" class="title"><br><br>
+                <input type="text" placeholder="Author" class="author"><br> <br>
+                <div class="addContainer"><button class="add" type="submit">Add</button></div>
+            </form>
+        </section>
+
+        <section id="contact-section" class="section">
+            <h1>Contact information</h1>
+            <p>Do you have any questions or you just want to say "Hello"? <br> You can reach out to us!</p>
+            <ul>
+                <li>Our e-mail: mail@mail.com </li>
+                <li>Our phone number: 43288423458945</li>
+                <li>Our adress: Street name 22, 84503 City, Country</li>
+            </ul>
+        </section>
+
+        <div class="copyright">
+            <p>Copyright ...</p>
         </div>
-        <hr>
-        <h2>Add a new book</h2>
-        <form id="form">
-            <input type="text" placeholder="Title" class="title"><br><br>
-            <input type="text" placeholder="Author" class="author"><br> <br>
-            <div class="addContainer"><button class="add" type="submit">Add</button></div>
-        </form>
     </main>
-    <!-- <script src="main.js"></script> -->
     <script src="app.js"></script>
 </body>
+
 </html>
