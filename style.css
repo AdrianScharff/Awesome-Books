@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
 }
 
 nav {
@@ -8,13 +9,14 @@ nav {
   border: 0.2rem solid black;
   padding: 0 1rem;
 }
+
 #bookList {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
 
-ul > li {
+nav > ul > li {
   border-right: 0.2rem solid black;
   padding-right: 1rem;
 }
@@ -24,6 +26,18 @@ ul > li {
   color: black;
 }
 
+.nav-link.active {
+  color: blue;
+}
+
+#datetime-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.2rem;
+}
+
+/* --------------------- */
+
 .section {
   display: none;
 }
@@ -32,10 +46,18 @@ ul > li {
   display: block;
 }
 
+#contact-section.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   width: 100%;
   display: flex;
   justify-content: center;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 /* ------------------------------- */
@@ -81,16 +103,18 @@ button {
   font-weight: 900;
 }
 
+button:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
 /* ---------------------- */
 
 hr {
   width: 10%;
   height: 0.17rem;
   background-color: black;
-}
-
-h2 {
-  text-align: center;
 }
 
 form {
@@ -115,4 +139,13 @@ input::placeholder {
   width: 19rem;
   display: flex;
   justify-content: flex-end;
+}
+
+/* ---------------- */
+
+.copyright {
+  border: 0.2rem solid black;
+  padding-left: 2rem;
+  margin-top: 7rem;
+  font-weight: 900;
 }
