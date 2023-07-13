@@ -46,6 +46,10 @@ nav > ul > li {
   display: block;
 }
 
+#list-section.active {
+  margin-bottom: 8rem;
+}
+
 #contact-section.active {
   display: flex;
   flex-direction: column;
@@ -64,12 +68,14 @@ h1 {
 
 .booksContainer {
   border: 2px solid black;
-  margin-bottom: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 .booksContainer ul {
   width: 100%;
   padding-left: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,4 +154,10 @@ input::placeholder {
   padding-left: 2rem;
   margin-top: 7rem;
   font-weight: 900;
+  position: fixed;
+  bottom: 1rem;
+  left: 1%;
+  right: 1%;
+  z-index: 10;
+  background-color: white;
 }
