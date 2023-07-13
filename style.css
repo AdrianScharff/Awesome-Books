@@ -2,8 +2,26 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 0.2rem solid black;
+  padding: 0 1rem;
+}
 #bookList {
-  
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+ul > li {
+  border-right: 0.2rem solid black;
+  padding-right: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
 }
 
 .section {
