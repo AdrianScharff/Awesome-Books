@@ -8,8 +8,12 @@ class BookManager {
     this.form = document.querySelector('form');
     this.titleInput = document.querySelector('.title');
     this.authorInput = document.querySelector('.author');
+    this.handleNavClick = this.handleNavClick.bind(this);
 
     this.form.addEventListener('submit', this.handleFormSubmit.bind(this));
+
+    this.navLinks = document.querySelectorAll('.nav-link');
+    this.navLinks.forEach((link) => link.addEventListener('click', this.handleNavClick));
   }
 
   updateData() {
@@ -63,8 +67,25 @@ class BookManager {
     this.addNewData(this.titleInput.value, this.authorInput.value);
   }
 
+  handleNavClick(event) {
+    event.preventDefault();
+
+    const sectionName = event.target.getAttribute('data-section');
+
+    const sections = document.querySelectorAll('.section');
+    sections.forEach((section) => section.classList.remove('active'));
+    this.navLinks.forEach((link) => link.classList.remove('active'));
+
+    const section = document.getElementById(`${sectionName}-section`);
+    section.classList.add('active');
+    event.target.classList.add('active');
+  }
+
   init() {
     this.displayBooks();
+    const listSection = document.querySelector('#list-section');
+    listSection.classList.add('active');
+    this.navLinks[0].classList.add('active');
   }
 }
 
